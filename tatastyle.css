@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+}
+nav{
+    height: 90px;
+    width: 100%;
+    box-shadow: 0px 3px 4px rgb(236, 221, 221);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 100px; */
+}
+nav .nav-items{
+    /* background-color: rgb(245, 244, 243); */
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .nav-items a{
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    color: black;
+    font-weight: 600;
+
+}
+nav a::before{
+    content:"";
+    height: 3px;
+    width: 0px;
+    display: inline-block;
+    background-color: black;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+}
+a:hover::before{
+
+    width: 100%;
+    transition: all .3s linear;
+}
+nav.nav-icon{
+    display: flex;
+    gap: 30px;
+}
+nav.nav-items{
+    display:0;
+
+}
+/contact/
+.contact{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(31, 39, 39);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+    .call,.test-drive{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    svg{
+        animation: zoom-up 0.5s linear infinite alternate;
+    }
+}
+@keyframes zoom-up {
+    to{
+        transform: scale(1.2);
+    }
+    
+}
+.primary-link{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+
+}
+/home/
+.home{
+    height: 80vh;
+    width: 100%;
+    
+    background:linear-gradient(90deg,white,goldenrod) ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+p{
+    width: 450px;
+    text-align: center;
+}
+.home-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.primary-para{
+    font-family:"Noto Sans", sans-serif ;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.primary-head{
+    font-family:"Noto Sans", sans-serif ;
+    font-weight: ;
+
+}
